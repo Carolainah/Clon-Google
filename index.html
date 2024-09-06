@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Es para que se vean todo tipo de carácteres --> 
+    <meta charset="UTF-8">
+    <!-- Hace posible que nuestra página se visualice en distintos dispositivos --> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título visible en la pestañita --> 
+    <title>Cloncito de Google</title>
+    <!--  --> 
+    <!-- Llamamos nuestra página de estilos --> 
+    <link rel="stylesheet" href="./assets/style.css">
+    <!-- Linkeamos nuestras fuentes, uwu --> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Berkshire+Swash&family=Cinzel:wght@400..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Ponemos el favicon -->   
+    <link rel="icon" href="./assets/imagenes/favicon.gif" type="image/gif">
+    </head>
+    
+    <body> 
+    <!-- Header es la parte superior de nuestra página  --> 
+    <header>
+        <!-- Nuestro menú de navegación :3  --> 
+        <nav>
+            <!-- Creamos listas desordenadas para enlistar nuestro menu  -->
+            <ul class="nav-der">
+                <li>
+                    <a href="">Gmail</a>
+                </li>
+                <li>
+                    <a href="">Imágenes</a>
+                </li>
+                <li class="menu-icon">
+                    <a href="#">  </a>
+                </li>
+                <!-- Nuestra bella imagen -->  
+                <li>
+                    <a href="">
+                        <img src="./assets/imagenes/yomi.jpeg" alt="Fotito mía">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header> 
+    <!-- Nuestra sección main, para poner lo importante de nuestra página  --> 
+    <main>
+        <!-- Imagen de Guguls --> 
+        <section class="main-logo">
+            <img src="./assets/imagenes/google-blanco.png" alt="Google Icon" title="Google logo bonito">
+        </section>
+        <!-- Esta sección es para colocar la clase de la barra de búsqueda, la blanca  --> 
+        <section class="main-input">
+            <!-- Clase para personalizar los objetos que va a tener adentro--> 
+            <div class="main-input-container">
+                <!-- Clase para el icono de busqueda--> 
+                <span class="search-icon"></span>
+                    <!-- Colocamos nuestra barra de búsqueda--> 
+                    <input type="text">
+                <!-- Clase para de los íconos, los convertimos en hipervínculos para que se les coloque el puntero--> 
+                <a class="micro-icon" href=""> </a>   
+                <!-- Clase para de los íconos, los convertimos en hipervínculos para que se les coloque el puntero--> 
+                <a class="cam-icon" href=""> </a>
+            </div>
+        </section>
+        <!--Clase para los botoncitos--> 
+        <section class="main-buttons">
+            <div>
+                <button> Buscar con Google </button>
+                <button> Me siento con suerte </button>
+            </div>
+        </section>
+    </main>
+    <!-- Creación de nuestro pie de página donde estará la info de gugults--> 
+    <footer>
+        <!--Creamos esta clase para alinearlos a la izquierda--> 
+        <ul class="footer-left">
+            <li>
+                <a href="https://about.google/?utm_source=google-MX&utm_medium=referral&utm_campaign=hp-footer&fg=1">Sobre Google</a>
+            </li>
+            <li>
+                <a href="https://ads.google.com/intl/es_mx/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2m--ahpm-0000000131-0000000000&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Publicidad</a>
+            </li>
+            <li>
+                <a href="https://smallbusiness.withgoogle.com/intl/es-419_mx/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=ww-ww-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u&c=MX#!/">Negocios</a>
+            </li>
+            <li>
+                <a href="https://www.google.com/search/howsearchworks/?fg=1">Cómo funciona la búsqueda</a>
+            </li>
+            <li>
+                Derechos reservados a: <a href="https://www.instagram.com/carolaina_bvb/"> Ana Carolina Vallarino Martínez </a> 
+            </li>
+        </ul> 
+        <!--Creamos esta clase para alinearlos a la derecha--> 
+        <ul class="footer-right">
+            <li>                
+                <a href="https://policies.google.com/privacy?hl=es-MX&fg=1">Privacidad</a>
+            </li>
+            <li>                
+                <a href="https://policies.google.com/terms?hl=es-MX&fg=1">Condiciones</a>
+            </li>
+            <li>
+                <a href="">Preferencias</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

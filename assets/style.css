@@ -1,0 +1,295 @@
+/* */
+/*Creo que empece por el body xq por eso lo hice desde 0, no me dejaba poner mi fondo de conejitos :c */
+body {
+    background-image: url("./imagenes/fondoo.jpg");
+    /* Ajusta la imagen para cubrir todo el fondo */
+    background-size: cover;
+    /* Evita que la imagen se repita */
+    background-repeat:no-repeat;
+    /* Centra la imagen en la página */
+    background-position:center;
+    /* Hace que el fondo se mantenga fijo al hacer scroll */
+    background-attachment: fixed; 
+    /* Elimina el fondo fijo en pantallas pequeñas 
+    background-attachment: scroll; */
+    /* Ajusta el tamaño de la imagen para que siempre sea visible 
+    background-size: contain; */
+    font-size: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+/* Aqui vamos a personalizar nuestra cajita de menú */
+/* Seleccionamos su ancho y altura */
+header{
+    width: 100%;
+    height: 60px;
+}
+/* Usamos Flex para asignar una dirección de fila horizontal y End para mandarlos en el extremo derecho */
+header nav{
+    display: flex;
+    justify-content: flex-end;    
+}
+/* Aqui estamos modificando nuestra lista desordenada */
+header nav .nav-der {
+    /* Modificamos ancho*/
+    width: 250px;
+    /* La altura, la cual es se adaptará de manera automatica*/
+    height: auto;
+    /* Flex permite organizar a sus elementos hijos en una dila o columna*/
+    display: flex;
+    /* Aqui eliminamos las viñetas de nuestra lista */
+    list-style: none;
+    /* Alineamos los elementos horizontalmente pero en medio del contenedor*/
+    justify-content: center;
+    /* Alineamos ahora los elementos hijos de manera vertical en nuestro contenedor header*/
+    align-items: center;
+    /*  Le ponemos un espacio interno */
+    padding: 15px;
+    /* Añadimos un espacio externo o sea alrededor del contedor */
+    margin: 15px;
+    font-size: 15px;
+
+}
+
+/* Aqui modificamos los hipervinculos de nuestra clase */
+nav .nav-der a{
+    /* Aqui hacemos que tengan una separación entre los hipervinculos */
+    margin-right: 20px;
+    /* Modificamos el color de nuestros hipervínculos */
+    color: #000000;
+    /* Aqui indicamos que nuestro hipervinculo no tendrá ningún diseño */ 
+    text-decoration: none; 
+    size: 10px;
+}
+/* Aqui modificamos los hipervinculos ya cuando el cursor pasa encima de ellos */
+nav .nav-der a:hover{
+    /* Aqui ya indicamos que se cambie de color y subraye cuando nuestro cursor esté en nuestro hipervínculo */
+    color:#b897be;
+    text-decoration: underline;
+}
+
+/* aqui modificamos el icono de los puntitos claro que si */
+nav .nav-der .menu-icon{
+    /* Mandamos a llamar el iconito */
+    background-image: url('https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png');
+    /* Hacemos que no se repita, aunque si no esta igual no se repite skajskjs  */
+    background-repeat: no-repeat;
+    /* Pues lo centramos bonito */
+    background-position: center;
+    /* Hacemos que se use el espacio del contenedor  */
+    background-size: contain;
+    /* Noc, pero hice que aumentara de tamaño, xdon */
+    padding: 5px;
+    /* Aqui hago que tenga una separación con el elemento de la derecha c: ya que estaba muy juntito*/
+    margin-right: 5px;
+    /* Aqui hacemos que cuando el mouse este en el mostrará el cursor como puntero, ayudando a que el usuario sepa que el elemento es interactivo owo*/
+    cursor: pointer;
+}
+/* Aqui vamos a personalizar nuestra imagen de la izquierda chi */
+nav .nav-der img {
+    /* Le damos redondez claro que si */
+    border-radius: 50px;
+    /* Hacemos que tenga un margen del lado izquierdo */
+    margin-left: 10px;
+    /* Modicamos el anchito y altura */
+    width: 40px;
+    height: 40px;
+}
+
+/* Personalización del main  */
+main {
+    margin-top: 90px;
+    text-align: center;
+}
+
+/* Personalizamos nuestro logo de google*/
+main .main-logo{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+/* Personalizamos la imagen del main*/
+main .main-logo img{
+    width: auto;
+    height: 85px;
+}
+
+/*Personalización de la barrita de búsqueda, la blancona*/
+main .main-input {
+    /*Aqui colocamos el ancho de nuestra barra de búsqueda, la blanca*/
+    width: 530px;
+    margin: 0 auto;
+    /*El margen que tendrá con los botones de abajo*/
+    margin-bottom: 35px;
+}
+
+/*Perzonalizamos el contenedorcito de la barra de búsqueda*/
+main .main-input-container{
+    /*Otra vez le recordamos su ancho*/
+    width: 530px;
+    /*Lo redondeamos bonito*/
+    border-radius: 100px;
+    /*Le ponemos un borde lindo*/
+    border: 1px solid #ffffff;
+    /*Ponemos flexible nuestro contenedor*/
+    display: flex;
+    /*Lo alineamos en el centro*/
+    justify-content: center;
+    align-items: center;
+    /* Ponemos fondo blanco porque estaba transparente y pues como el fondo es negro no se va a ver :c */
+    background-color: #ffffff; 
+    }
+/*Perzonalizamos el la cajita donde ahora si podremos colocar nuestro texto*/
+    main .main-input input{
+        /*El texto que se va a colocar va a estar a la izquierda*/
+        padding-left: 10px;
+        /*Recordamos el espacio que tendrá dentro, para que no nos desacomode las cositas*/
+        width: 450px;
+        /*Le ponemos su altura*/
+        height: 40px;
+        border: none;
+        /*Quitandong sus propiedades para que este transparentito*/
+        outline: none;
+        /* Cambia el fondo a blanco */
+        background-color:#ffffff 
+    }
+     /*Cuando esté arriba el puntero hará que se cree una sombrita negra*/
+    main .main-input-container:hover{
+        box-shadow: 0 1px 6px 0 #b897be;
+        border-color: #dfe1e500;
+    }
+
+     /* Aqui ya vamos a colocar el icono de buscar y lo personalizamos */
+    main .main-input .search-icon{
+        background-image: url('https://img.icons8.com/android/24/000000/search.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 18px;
+        height: 18px;
+        padding-left: 30px;
+
+    }
+    /* Aqui ya vamos a colocar el icono de micrófono de buscar y lo personalizamos */
+   main .main-input .micro-icon{
+        background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 18px;
+        height: 19px;
+        cursor: pointer;
+        padding-left: 20px;
+    }
+    /* Aqui ya vamos a colocar el icono de micrófono de lens y lo personalizamos */
+    main .main-input .cam-icon{
+        background-image: url('./imagenes/cam-icon.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+        padding-left: 20px;
+    }
+    /* Personalizando los botoncitos */
+    main .main-buttons{
+        width: 530px;
+        margin: 0 auto;
+    }
+     /*Personalizamos el contenedor de los botones*/
+    main .main-buttons div {
+        /* Aqui hacemos que se muestren en una línea */
+        display: inline-block;
+    }
+     /*Aqui personalizamos el botón en si, con su fondo, espacios y eso*/
+    main .main-buttons button {
+        height: 36px;
+        background-color: #f2f2f2;
+        border: 0;
+        font-size: 14px;
+        color: #5f6368;
+        border-radius: 80px;
+        padding: 0 15px;
+        margin-right: 15px;
+        
+    }
+     /*Aqui personalizamos cuando el puntero esté encima*/
+    main .main-buttons button:hover{
+        border: 0px solid #000000;
+        background-color: #f9dcffc9;
+        background-blend-mode: color-burn;
+        box-shadow: 0 1px 1px #000000;
+        color: #000000;
+        cursor: pointer;
+    }
+ /* Vamos a hacer nuestro pie de página*/
+footer {
+     /*Lo mandamos hasta abajo*/
+    bottom: 0;
+    /*Que agarre todo lo de abajo*/
+    position: absolute;
+    /*Fondito Blanco*/
+    background-color: #000000c5;
+    font-family: Poppins;
+    color: #ffffff;
+    font-size: 10px;
+    /*Que ocupe todo el ancho*/
+    width: 100%;
+    /*Lo hacemos flexibelón*/
+    display: flex;
+    /*Que se exparsa a los lados*/
+    justify-content: space-between;
+    padding-top: 5px;
+}
+/*Personalizamos el footer derecho*/
+footer .footer-right {
+    display: flex;
+    /*Se junte cuando se haga chiquita la pestaña*/
+    flex-wrap: wrap-reverse;
+    /*que se exparzan en el espacio*/
+    justify-content: space-evenly;
+    /*Que se alinea a la derecha*/
+    justify-self: right;
+    padding-right: 30px;
+
+}
+/*Personalizamos el footer izquierdo*/
+footer .footer-left {
+    display: flex;
+    /*Se junte cuando se haga chiquita la pestaña*/
+    flex-wrap: wrap-reverse;
+    /*que se exparzan en el espacio*/
+    justify-content: space-evenly;
+    justify-self: left;
+}
+
+/*Quitamos el diseño a la lista desordenada*/
+footer ul {
+    list-style: none;
+    padding-left: 15px;
+}
+
+footer li {
+    /*Su espacio interno*/
+    padding: 5px;
+    /*Espacio interno entre los objetos de nuestra lista*/
+    padding-left: 39px;
+}
+
+footer li a {
+    /*Reiteramos el color de la letra*/
+    color: #ffffff;
+    /**/
+    text-decoration: none;
+}
+/*Personalizamos cuando el cursos se ponga encimita*/
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+
